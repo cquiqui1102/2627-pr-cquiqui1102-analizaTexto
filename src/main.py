@@ -30,15 +30,9 @@ def analizar_texto(frase: str) -> tuple[int, int]:
 
 def main():
     """
-    Función principal
-    
-    Args:
-    Frase introducida por el usuario
-    
-    Returns:
-    Número de vocales
-    Númer de palabras
-    
+    Función principal:
+    Solicita una frase al usuario y muestre el número de vocales y palabras.
+
     """
 
     # Entrada
