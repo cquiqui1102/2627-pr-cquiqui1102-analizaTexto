@@ -1,5 +1,8 @@
 # Desarrolla un programa en Python que solicite una frase y calcule el número total de vocales y de palabras que contiene.
 
+VOCALES: str = "aeiouüáéíóú"
+
+
 def analizar_texto(frase: str) -> tuple[int, int]:
     """
     Calcula el número de vocales y el número de palabras introducidas.
@@ -11,8 +14,6 @@ def analizar_texto(frase: str) -> tuple[int, int]:
     tuple[int, int] = Número de vocales, Número de palabras
 
     """
-
-    VOCALES: str = "aeiouüáéíóú"
 
     numero_vocales: int = 0
 
