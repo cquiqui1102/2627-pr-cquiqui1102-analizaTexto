@@ -12,12 +12,12 @@ def analizar_texto(frase: str) -> tuple[int, int]:
 
     """
 
-    vocales: str = "aeiouüAEIOUáéíóúÁÉÍÓÚÜ"
+    VOCALES: str = "aeiouüáéíóú"
 
     numero_vocales: int = 0
 
-    for letra in frase:
-        if letra in vocales:
+    for letra in frase.lower():
+        if letra in VOCALES:
             numero_vocales += 1
 
     palabra: list[str] = frase.split()
@@ -41,8 +41,8 @@ def main():
     """
 
     # Entrada
-
-    frase: str= input("Introduzca una frase: ")
+    
+    frase: str = input("Introduzca una frase: ")
 
     # Salida
 
