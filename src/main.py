@@ -2,14 +2,13 @@
 
 def analizar_texto(frase: str) -> tuple[int, int]:
     """
-    Cuenta el número de vocales y el número de palabras introducidas
+    Calcula el número de vocales y el número de palabras introducidas.
 
     Args:
-    Una frase dadad por el usuario
+    frase: Frase dada por el usuario
 
     Returns:
-    Número de vocales (incluidas acentuadas, mayúsculas y ü)
-    Número de palabras
+    tuple[int, int] = Número de vocales, Número de palabras
 
     """
 
@@ -26,6 +25,8 @@ def analizar_texto(frase: str) -> tuple[int, int]:
 
     return numero_vocales, numero_palabras
 
+
+
 def main():
     """
     Función principal
@@ -34,14 +35,17 @@ def main():
     Frase introducida por el usuario
     
     Returns:
-    El número de vocales y el número de palabras
+    Número de vocales
+    Númer de palabras
     
     """
 
     # Entrada
+
     frase: str= input("Introduzca una frase: ")
 
     # Salida
+
     numero_vocales, numero_palabras = analizar_texto(frase)
 
     print(f"Vocales: {numero_vocales}")
